@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/matt/static/css/main.5f361e03.chunk.css",
-    "main.js": "/matt/static/js/main.56720070.chunk.js",
-    "main.js.map": "/matt/static/js/main.56720070.chunk.js.map",
-    "runtime-main.js": "/matt/static/js/runtime-main.1d80fed1.js",
-    "runtime-main.js.map": "/matt/static/js/runtime-main.1d80fed1.js.map",
-    "static/js/2.348bdba1.chunk.js": "/matt/static/js/2.348bdba1.chunk.js",
-    "static/js/2.348bdba1.chunk.js.map": "/matt/static/js/2.348bdba1.chunk.js.map",
-    "index.html": "/matt/index.html",
-    "precache-manifest.b48e66ec61a194fc3dafcd954faa70e8.js": "/matt/precache-manifest.b48e66ec61a194fc3dafcd954faa70e8.js",
-    "service-worker.js": "/matt/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/matt/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.348bdba1.chunk.js.LICENSE.txt": "/matt/static/js/2.348bdba1.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/matt/static/media/logo.5d5d9eef.svg"
+    "main.css": "/mattcasagrande/static/css/main.5f361e03.chunk.css",
+    "main.js": "/mattcasagrande/static/js/main.54e7a694.chunk.js",
+    "main.js.map": "/mattcasagrande/static/js/main.54e7a694.chunk.js.map",
+    "runtime-main.js": "/mattcasagrande/static/js/runtime-main.ffe68b76.js",
+    "runtime-main.js.map": "/mattcasagrande/static/js/runtime-main.ffe68b76.js.map",
+    "static/js/2.348bdba1.chunk.js": "/mattcasagrande/static/js/2.348bdba1.chunk.js",
+    "static/js/2.348bdba1.chunk.js.map": "/mattcasagrande/static/js/2.348bdba1.chunk.js.map",
+    "index.html": "/mattcasagrande/index.html",
+    "precache-manifest.3fb16b703c534df318fe06944dcf2dac.js": "/mattcasagrande/precache-manifest.3fb16b703c534df318fe06944dcf2dac.js",
+    "service-worker.js": "/mattcasagrande/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/mattcasagrande/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.348bdba1.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.348bdba1.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/mattcasagrande/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d80fed1.js",
+    "static/js/runtime-main.ffe68b76.js",
     "static/js/2.348bdba1.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.56720070.chunk.js"
+    "static/js/main.54e7a694.chunk.js"
   ]
 }
