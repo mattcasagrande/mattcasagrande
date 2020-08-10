@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mattcasagrande/static/css/main.5f361e03.chunk.css",
+    "main.js": "/mattcasagrande/static/js/main.f887379d.chunk.js",
+    "main.js.map": "/mattcasagrande/static/js/main.f887379d.chunk.js.map",
+    "runtime-main.js": "/mattcasagrande/static/js/runtime-main.a3679dd6.js",
+    "runtime-main.js.map": "/mattcasagrande/static/js/runtime-main.a3679dd6.js.map",
+    "static/js/2.5ffce8af.chunk.js": "/mattcasagrande/static/js/2.5ffce8af.chunk.js",
+    "static/js/2.5ffce8af.chunk.js.map": "/mattcasagrande/static/js/2.5ffce8af.chunk.js.map",
+    "index.html": "/mattcasagrande/index.html",
+    "precache-manifest.c61448bf2dadf21e7a56bbe08f9b4f8a.js": "/mattcasagrande/precache-manifest.c61448bf2dadf21e7a56bbe08f9b4f8a.js",
+    "service-worker.js": "/mattcasagrande/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/mattcasagrande/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.5ffce8af.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.5ffce8af.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/mattcasagrande/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3679dd6.js",
+    "static/js/2.5ffce8af.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f887379d.chunk.js"
+  ]
+}
