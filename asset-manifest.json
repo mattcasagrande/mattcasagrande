@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/mattcasagrande/static/css/main.ddc927df.chunk.css",
-    "main.js": "/mattcasagrande/static/js/main.c5484f16.chunk.js",
-    "main.js.map": "/mattcasagrande/static/js/main.c5484f16.chunk.js.map",
+    "main.css": "/mattcasagrande/static/css/main.7aaa8809.chunk.css",
+    "main.js": "/mattcasagrande/static/js/main.00f97ff5.chunk.js",
+    "main.js.map": "/mattcasagrande/static/js/main.00f97ff5.chunk.js.map",
     "runtime-main.js": "/mattcasagrande/static/js/runtime-main.ffe68b76.js",
     "runtime-main.js.map": "/mattcasagrande/static/js/runtime-main.ffe68b76.js.map",
     "static/css/2.11829350.chunk.css": "/mattcasagrande/static/css/2.11829350.chunk.css",
-    "static/js/2.bbbc6c49.chunk.js": "/mattcasagrande/static/js/2.bbbc6c49.chunk.js",
-    "static/js/2.bbbc6c49.chunk.js.map": "/mattcasagrande/static/js/2.bbbc6c49.chunk.js.map",
+    "static/js/2.2df29c0b.chunk.js": "/mattcasagrande/static/js/2.2df29c0b.chunk.js",
+    "static/js/2.2df29c0b.chunk.js.map": "/mattcasagrande/static/js/2.2df29c0b.chunk.js.map",
     "index.html": "/mattcasagrande/index.html",
-    "precache-manifest.6876b93a00d66e920f559cf0e6f5c23b.js": "/mattcasagrande/precache-manifest.6876b93a00d66e920f559cf0e6f5c23b.js",
+    "precache-manifest.af68815fc9cdec991843dd40fcf6c6d2.js": "/mattcasagrande/precache-manifest.af68815fc9cdec991843dd40fcf6c6d2.js",
     "service-worker.js": "/mattcasagrande/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/mattcasagrande/static/css/2.11829350.chunk.css.map",
-    "static/css/main.ddc927df.chunk.css.map": "/mattcasagrande/static/css/main.ddc927df.chunk.css.map",
-    "static/js/2.bbbc6c49.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.bbbc6c49.chunk.js.LICENSE.txt"
+    "static/css/main.7aaa8809.chunk.css.map": "/mattcasagrande/static/css/main.7aaa8809.chunk.css.map",
+    "static/js/2.2df29c0b.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.2df29c0b.chunk.js.LICENSE.txt",
+    "static/media/espalda-der.f397eb54.svg": "/mattcasagrande/static/media/espalda-der.f397eb54.svg",
+    "static/media/espalda.5c86efc0.svg": "/mattcasagrande/static/media/espalda.5c86efc0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ffe68b76.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.bbbc6c49.chunk.js",
-    "static/css/main.ddc927df.chunk.css",
-    "static/js/main.c5484f16.chunk.js"
+    "static/js/2.2df29c0b.chunk.js",
+    "static/css/main.7aaa8809.chunk.css",
+    "static/js/main.00f97ff5.chunk.js"
   ]
 }
