@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/mattcasagrande/static/css/main.7aaa8809.chunk.css",
-    "main.js": "/mattcasagrande/static/js/main.00f97ff5.chunk.js",
-    "main.js.map": "/mattcasagrande/static/js/main.00f97ff5.chunk.js.map",
+    "main.css": "/mattcasagrande/static/css/main.34ea585f.chunk.css",
+    "main.js": "/mattcasagrande/static/js/main.cfdd9a41.chunk.js",
+    "main.js.map": "/mattcasagrande/static/js/main.cfdd9a41.chunk.js.map",
     "runtime-main.js": "/mattcasagrande/static/js/runtime-main.ffe68b76.js",
     "runtime-main.js.map": "/mattcasagrande/static/js/runtime-main.ffe68b76.js.map",
     "static/css/2.11829350.chunk.css": "/mattcasagrande/static/css/2.11829350.chunk.css",
-    "static/js/2.2df29c0b.chunk.js": "/mattcasagrande/static/js/2.2df29c0b.chunk.js",
-    "static/js/2.2df29c0b.chunk.js.map": "/mattcasagrande/static/js/2.2df29c0b.chunk.js.map",
+    "static/js/2.1fb8f380.chunk.js": "/mattcasagrande/static/js/2.1fb8f380.chunk.js",
+    "static/js/2.1fb8f380.chunk.js.map": "/mattcasagrande/static/js/2.1fb8f380.chunk.js.map",
     "index.html": "/mattcasagrande/index.html",
-    "precache-manifest.af68815fc9cdec991843dd40fcf6c6d2.js": "/mattcasagrande/precache-manifest.af68815fc9cdec991843dd40fcf6c6d2.js",
+    "precache-manifest.7a8a427c6f25882fd3d2079086af1ce1.js": "/mattcasagrande/precache-manifest.7a8a427c6f25882fd3d2079086af1ce1.js",
     "service-worker.js": "/mattcasagrande/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/mattcasagrande/static/css/2.11829350.chunk.css.map",
-    "static/css/main.7aaa8809.chunk.css.map": "/mattcasagrande/static/css/main.7aaa8809.chunk.css.map",
-    "static/js/2.2df29c0b.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.2df29c0b.chunk.js.LICENSE.txt",
+    "static/css/main.34ea585f.chunk.css.map": "/mattcasagrande/static/css/main.34ea585f.chunk.css.map",
+    "static/js/2.1fb8f380.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.1fb8f380.chunk.js.LICENSE.txt",
+    "static/media/brush.b96d452f.svg": "/mattcasagrande/static/media/brush.b96d452f.svg",
     "static/media/espalda-der.f397eb54.svg": "/mattcasagrande/static/media/espalda-der.f397eb54.svg",
     "static/media/espalda.5c86efc0.svg": "/mattcasagrande/static/media/espalda.5c86efc0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ffe68b76.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.2df29c0b.chunk.js",
-    "static/css/main.7aaa8809.chunk.css",
-    "static/js/main.00f97ff5.chunk.js"
+    "static/js/2.1fb8f380.chunk.js",
+    "static/css/main.34ea585f.chunk.css",
+    "static/js/main.cfdd9a41.chunk.js"
   ]
 }
