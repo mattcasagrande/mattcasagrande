@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mattcasagrande/static/css/main.76875338.chunk.css",
+    "main.css": "/mattcasagrande/static/css/main.adcf0876.chunk.css",
     "main.js": "/mattcasagrande/static/js/main.41482cc4.chunk.js",
     "main.js.map": "/mattcasagrande/static/js/main.41482cc4.chunk.js.map",
     "runtime-main.js": "/mattcasagrande/static/js/runtime-main.ffe68b76.js",
@@ -9,10 +9,10 @@
     "static/js/2.1f923128.chunk.js": "/mattcasagrande/static/js/2.1f923128.chunk.js",
     "static/js/2.1f923128.chunk.js.map": "/mattcasagrande/static/js/2.1f923128.chunk.js.map",
     "index.html": "/mattcasagrande/index.html",
-    "precache-manifest.9f6b324339dd64ce9b983a4aa8ec03af.js": "/mattcasagrande/precache-manifest.9f6b324339dd64ce9b983a4aa8ec03af.js",
+    "precache-manifest.29a3172a1d27f97e3abb8efc81caf17a.js": "/mattcasagrande/precache-manifest.29a3172a1d27f97e3abb8efc81caf17a.js",
     "service-worker.js": "/mattcasagrande/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/mattcasagrande/static/css/2.11829350.chunk.css.map",
-    "static/css/main.76875338.chunk.css.map": "/mattcasagrande/static/css/main.76875338.chunk.css.map",
+    "static/css/main.adcf0876.chunk.css.map": "/mattcasagrande/static/css/main.adcf0876.chunk.css.map",
     "static/js/2.1f923128.chunk.js.LICENSE.txt": "/mattcasagrande/static/js/2.1f923128.chunk.js.LICENSE.txt",
     "static/media/brush.bc11cde0.svg": "/mattcasagrande/static/media/brush.bc11cde0.svg",
     "static/media/espalda-der.f397eb54.svg": "/mattcasagrande/static/media/espalda-der.f397eb54.svg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.ffe68b76.js",
     "static/css/2.11829350.chunk.css",
     "static/js/2.1f923128.chunk.js",
-    "static/css/main.76875338.chunk.css",
+    "static/css/main.adcf0876.chunk.css",
     "static/js/main.41482cc4.chunk.js"
   ]
 }
