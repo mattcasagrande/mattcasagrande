@@ -1,0 +1,46 @@
+@keyframes enter {
+    0% {left: 2000px;
+        opacity: 0;
+    }
+    80% {left: 2000px}
+    95% {left: 20px}
+    100%{ left: 0px}
+}
+
+@keyframes rollin {
+    0% {
+        right: 400px;
+    }
+    100% {
+        right: 0px
+    }
+    
+}
+.imgCont{
+    animation-name: rollin;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    top: -20px;
+}
+
+.img{
+    width: inherit;
+    clip-path: circle(95px at center);
+    vertical-align: middle;
+}
+.arrow{
+    width: 20px;
+    margin: auto;
+}
+.container{
+    align-content: center;
+    position: relative;
+    align-content: center;
+    justify-content: space-around;
+    animation-name: enter;
+    animation-duration: 3s ;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}

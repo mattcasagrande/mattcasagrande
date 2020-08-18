@@ -1,0 +1,46 @@
+.logo{
+    width: 300px;
+    transition: 0.3s ease-in
+}
+.logoFull{
+    z-index: 1;
+    overflow: visible;
+    width: 100%;
+    transition: ease-out;
+}
+
+.titles{
+    font-family: monospace;
+    display: block;
+    margin: auto;
+}
+.titlesFull{
+    display: none;
+    color: white;
+}
+.row{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 60px;
+}
+.container{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn1{
+    margin: auto;
+    margin-left: 10%;
+    transition: 0.2s linear;
+}
+.btn2{
+    position: relative;
+    overflow: visible;
+    left: 20;
+    transition: 0.2s linear;
+}
+
+.noDisplay{
+    opacity: 0;
+}

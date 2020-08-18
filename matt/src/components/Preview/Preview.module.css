@@ -1,0 +1,21 @@
+.cabecera{
+    height: 60px;
+}
+.img{
+    height: 50px;
+}
+.logocont{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dates{
+    display: flex;
+    justify-content: center;
+}
+.dates2{
+    vertical-align: baseline;
+}
+.container{
+    transition: 0.5s ease-in;
+    text-align: center;
+}

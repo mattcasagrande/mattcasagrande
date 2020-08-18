@@ -1,0 +1,86 @@
+.container{
+    padding-bottom: 100px;
+    display: flex;
+}
+.stack{
+    overflow: visible;
+    width: auto;
+    display: flex;
+    left: 100px;
+    z-index: 1;
+    color: black;
+    margin-top: 10px;
+    height: auto;
+}
+.brush{
+    margin-top: 50px;
+    overflow: hidden;
+    height: 100px;
+    width: 500px;
+    left: -200px;
+    position: absolute;
+    z-index: -2;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+.bigbrush{
+    overflow: hidden;
+    height: 250px;
+    width: 1500px;
+    position: absolute;
+    left: -400px;
+    z-index: -1;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+.title{
+    text-decoration: none;
+    position: absolute;
+    left: 40px;
+    padding-top: 40px;
+    color: black;
+}
+#hovered{
+    width:460px ;
+    left: -150px;
+}
+.icono{
+    max-height: 45px;
+    margin-top: 10px;
+    transition: 1s linear;
+    position: relative;
+    right: 0;
+    padding-right: 50px;
+}
+.iconoClosed{
+    max-height: 45px;
+    margin-top: 10px;
+    transition: 2s linear;
+    position: absolute;
+    left: 0px;
+}
+.iconCont{
+    position: relative;
+    width: 120%;
+    margin-top: 130px;
+    transition-delay: 0.5s;
+    transition: 2s ease-in;
+    z-index: 10;
+}
+.iconHide{
+    position: relative;
+    left: 140px;
+    width: 80%;
+    margin-top: 130px;
+    z-index: -1;
+    opacity: 0;
+}
+.cierre{
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: 15px;
+    transition: 1s linear;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+}
