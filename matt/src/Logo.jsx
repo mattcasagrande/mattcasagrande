@@ -14,9 +14,9 @@ export function Logo({ className }) {
             viewBox="0 0 500 221.2"
             xmlSpace="preserve"
         >
-<style type="text/css">
-	
-</style>
+<style type="text/css">{`
+  .st0 { fill: currentColor; }
+`}</style>
 <g id="XMLID_14_">
 	<path id="XMLID_29_" class="st0" d="M103.5,87l13.5,46.6h18.1L148.6,87c0.2-0.8,0.5-1.8,0.8-2.9c1.7-5.8,3-11.1,3.8-15.8
 		c0.3,5.3,0.6,9.3,1,12.2c0.2,2.9,0.6,6.3,1.1,10.1l5.8,43h25.3l-15.3-99h-26.9l-15.1,50.9c-1.2,4.4-1.9,6.9-2,7.6

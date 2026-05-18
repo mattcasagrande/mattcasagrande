@@ -1,57 +1,45 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import styles from './Preview.module.css'
 
-
-export function Preview({companies , selectedCompany}){
-    const company = companies.find(x => x.id == selectedCompany)
-    if(!company){
-        return(
-            <h2>Select Company</h2>
-        )
-    }else{
-    return(
-        <div className={styles.container}>
-            <Row className={styles.logocont}>
-                <Col>
-                    <img className={styles.img} src={company.logo} alt=""/>
-                </Col>
-            </Row>
-            <Row className={styles.cabecera}>
-                <Col>
-                    <h5>{company.name}</h5>
-                    <hr/>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h4>{company.puesto}</h4>
-                </Col>
-                
-            </Row>
-            <Row>
-                <Col className={styles.dates}>
-                    <h7>{company.type}  -  From: {company.start }   To: {company.end}   in: {company.country}</h7>
-                </Col>  
-            </Row>
-            <Row>
-                <Col>
-                    <hr/>
-                    <h6 className={styles.dates}>What I did:</h6>
-                    <p>{company.description}</p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <a href={company.url} rel="noopener noreferrer">
-                        {company.url}
-                    </a>
-                </Col>
-            </Row>
-           
-            
-        </div>
-    )}
+export function Preview({ companies, selectedCompany }) {
+  const company = companies.find((x) => x.id == selectedCompany);
+  if (!company) {
+    return <h2 className="text-center text-lg font-medium">Select Company</h2>;
+  }
+  return (
+    <div className="text-center transition duration-500 ease-in">
+      <div className="my-5">
+        <img className="mx-auto h-12 object-contain" src={company.logo} alt="" />
+      </div>
+      <div className="min-h-[60px]">
+        <h5 className="text-base font-semibold">{company.name}</h5>
+        <hr className="mx-auto mt-2 max-w-md border-zinc-200 dark:border-zinc-700" />
+      </div>
+      <div className="mt-2">
+        <h4 className="text-lg font-medium">{company.puesto}</h4>
+      </div>
+      <div className="mt-2 flex justify-center">
+        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          {company.type} — From: {company.start} To: {company.end} — in: {company.country}
+        </p>
+      </div>
+      <div className="mt-4 px-2">
+        <hr className="border-zinc-200 dark:border-zinc-700" />
+        <h6 className="mt-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300">What I did:</h6>
+        <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
+          {company.description}
+        </p>
+      </div>
+      <div className="mt-4">
+        <a
+          href={company.url}
+          rel="noopener noreferrer"
+          className="break-all text-sm text-blue-600 underline hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          {company.url}
+        </a>
+      </div>
+    </div>
+  );
 }
 
-export default Preview
+export default Preview;

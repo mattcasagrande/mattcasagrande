@@ -1,70 +1,85 @@
 'use client';
 
 import React, { useState } from 'react';
-import styles from './Design.module.css';
-import { Row } from 'react-bootstrap';
 import tools from './tools';
 import { publicUrl } from '@/lib/basePath';
 
 export function Design() {
-    const [open, setOpen] = useState(false);
-    const [hovered, setHovered] = useState(false);
-    const brushClass = [
-        open ? styles.bigbrush : styles.brush,
-        !open && hovered ? styles.hovered : null,
-    ]
-        .filter(Boolean)
-        .join(' ');
+  const [open, setOpen] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
-    return (
-        <div className={styles.container}>
-            <Row className={styles.stack}>
+  const brushClasses = [
+    'cursor-pointer transition-all duration-500 ease-linear',
+    open
+      ? 'absolute -left-[400px] z-[-1] h-[250px] w-[1500px] max-w-none overflow-hidden'
+      : 'absolute -left-[200px] z-[-2] h-[100px] w-[500px] overflow-hidden',
+    !open && hovered ? 'w-[460px] max-w-[460px] -translate-x-[150px]' : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  return (
+    <div className="relative flex min-h-[320px] flex-col pb-24">
+      <div className="relative left-0 z-[1] mt-2 flex h-auto w-auto items-start overflow-visible md:left-[100px]">
+        <img
+          className={brushClasses}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          onClick={() => setOpen(!open)}
+          src={publicUrl('/Imagenes/brush.svg')}
+          alt=""
+        />
+        {open ? (
+          <h3 className="absolute left-10 top-10 text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+            <a
+              href="https://www.behance.net/designmatt6c88"
+              className="underline decoration-zinc-400 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Behance
+            </a>
+          </h3>
+        ) : (
+          <h3 className="absolute left-10 top-10 text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+            Design Tools
+          </h3>
+        )}
+      </div>
+
+      <div
+        className={`relative left-0 z-10 mt-[130px] flex flex-wrap gap-3 px-4 transition-all delay-500 duration-1000 ease-in md:left-[140px] md:w-[120%] ${
+          open ? 'opacity-100' : 'pointer-events-none -z-10 opacity-0'
+        }`}
+      >
+        {tools.map((x) => {
+          if (x.name === 'Boton') {
+            return (
+              <button
+                type="button"
+                key="Boton"
+                className="cursor-pointer border-0 bg-transparent p-0"
+                onClick={() => setOpen(!open)}
+              >
                 <img
-                    className={brushClass}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
-                    onClick={() => setOpen(!open)}
-                    src={publicUrl('/Imagenes/brush.svg')}
-                    alt=""
+                  className={open ? 'max-h-[30px] max-w-[30px]' : 'max-h-[45px] opacity-80'}
+                  src={publicUrl('/Imagenes/espalda.svg')}
+                  alt=""
                 />
-
-                {(() => {
-                    if (open) {
-                        return (
-                            <h3 className={styles.title}>
-                                <a href="https://www.behance.net/designmatt6c88">Behance</a>
-                            </h3>
-                        );
-                    }
-                    return <h3 className={styles.title}>Design Tools</h3>;
-                })()}
-            </Row>
-            <Row className={open ? styles.iconCont : styles.iconHide}>
-                {tools.map((x) => {
-                    if (x.name === 'Boton') {
-                        return (
-                            <img
-                                key="Boton"
-                                className={open ? styles.cierre : styles.iconoClosed}
-                                src={publicUrl('/Imagenes/espalda.svg')}
-                                alt=""
-                                onClick={() => setOpen(!open)}
-                            />
-                        );
-                    }
-                    return (
-                        <div key={x.name}>
-                            <img
-                                className={open ? styles.icono : styles.iconoClosed}
-                                src={x.url}
-                                alt=""
-                            />
-                        </div>
-                    );
-                })}
-            </Row>
-        </div>
-    );
+              </button>
+            );
+          }
+          return (
+            <div key={x.name} className="relative">
+              <img
+                className={open ? 'max-h-[45px] object-contain pr-12' : 'absolute left-0 max-h-[45px] opacity-70'}
+                src={x.url}
+                alt=""
+              />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default Design;
