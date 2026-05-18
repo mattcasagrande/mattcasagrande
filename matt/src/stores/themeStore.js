@@ -23,7 +23,7 @@ const storage = createJSONStorage(() =>
 export const useThemeStore = create(
   persist(
     (set, get) => ({
-      theme: 'light',
+      theme: 'dark',
       setTheme: (next) => {
         const theme = next === 'dark' ? 'dark' : 'light';
         set({ theme });

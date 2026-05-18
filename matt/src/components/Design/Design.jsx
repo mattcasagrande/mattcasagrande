@@ -19,8 +19,8 @@ export function Design() {
     .join(' ');
 
   return (
-    <div className="relative flex min-h-[320px] flex-col pb-24">
-      <div className="relative left-0 z-[1] mt-2 flex h-auto w-auto items-start overflow-visible md:left-[100px]">
+    <div className="relative flex min-h-[320px] scroll-mt-28 flex-col overflow-x-hidden pb-24" id="design">
+      <div className="relative left-0 z-[1] mt-2 flex h-auto w-full max-w-full min-w-0 items-start overflow-x-hidden md:left-[100px]">
         <img
           className={brushClasses}
           onMouseEnter={() => setHovered(true)}
@@ -46,7 +46,7 @@ export function Design() {
       </div>
 
       <div
-        className={`relative left-0 z-10 mt-[130px] flex flex-wrap gap-3 px-4 transition-all delay-500 duration-1000 ease-in md:left-[140px] md:w-[120%] ${
+        className={`relative left-0 z-10 mt-[130px] flex w-full max-w-full flex-wrap gap-3 px-4 transition-all delay-500 duration-1000 ease-in md:left-[140px] ${
           open ? 'opacity-100' : 'pointer-events-none -z-10 opacity-0'
         }`}
       >

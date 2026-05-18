@@ -4,8 +4,8 @@ import React from 'react';
 
 export function AboutMe() {
   return (
-    <div className="relative w-full max-w-4xl animate-aboutIn">
-      <div id="About-me">
+    <div id="about" className="relative w-full max-w-4xl scroll-mt-28 animate-aboutIn">
+      <div>
         <div className="flex flex-col gap-6 md:flex-row md:items-start">
           <div className="mx-auto shrink-0 md:mx-0 md:w-1/4">
             <img

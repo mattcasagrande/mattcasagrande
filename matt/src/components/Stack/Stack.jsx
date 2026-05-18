@@ -14,7 +14,7 @@ export function Stack() {
   };
 
   return (
-    <div className="relative min-h-[220px] pb-6">
+    <div className="relative min-h-[220px] scroll-mt-28 overflow-x-hidden pb-6" id="stack">
       <div className="absolute right-4 top-2 z-10 text-white drop-shadow md:right-24">
         {open ? (
           <h3 className="text-lg font-semibold">

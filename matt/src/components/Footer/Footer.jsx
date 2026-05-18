@@ -6,7 +6,10 @@ import ThemeToggle from '../ThemeToggle.jsx';
 
 export function Footer() {
   return (
-    <div className="mt-8 flex h-[60px] items-center rounded-tl-lg rounded-tr-lg bg-red-700 px-3 pt-2 text-white dark:bg-red-900">
+    <div
+      id="contact"
+      className="mt-8 flex h-[60px] scroll-mt-24 items-center rounded-tl-lg rounded-tr-lg bg-red-700 px-3 pt-2 text-white dark:bg-red-900"
+    >
       <div className="flex w-full flex-row items-center justify-between gap-2">
         <div className="flex min-w-0 flex-1 items-center">
           <div className="ml-2 w-[100px] shrink-0">
@@ -14,7 +17,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex shrink-0 items-center justify-end gap-1 sm:gap-2">
-          <ThemeToggle />
+          <ThemeToggle variant="footer" />
           <a href="https://github.com/mattcasagrande" className="inline-flex">
             <img
               className="ml-2 mt-2 max-h-5 object-contain brightness-0 invert"
