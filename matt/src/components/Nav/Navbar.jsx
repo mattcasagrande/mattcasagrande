@@ -8,8 +8,7 @@ import { getCompaniesForNavDropdown } from '@/data/experiences';
 
 const NAV_LINKS = [
   { href: '/#about', label: 'About' },
-  { href: '/#stack', label: 'Stack' },
-  { href: '/#design', label: 'Design' },
+  { href: '/#projects', label: 'Projects' },
   { href: '/#contact', label: 'Contact' },
 ];
 
