@@ -1,59 +1,65 @@
-import React from 'react'
-import styles from './Selector.module.css'
-import flecha from '../../Imagenes/flecha-hacia-arriba.png'
-import { useState } from 'react'
+'use client';
 
-export function Selector({selectCompany,companies,lastSelected , selectedCompany}){
-const [hovered , setHovered]= useState(null)
+import React, { useState } from 'react';
+import styles from './Selector.module.css';
+import { publicUrl } from '@/lib/basePath';
 
-    return(
-        <div className={selectedCompany? styles.container : styles.containerLine}>
-            {console.log("componente",companies)}
-            
-            
-            {(()=>{
-                    if(!selectedCompany){
-                        return <h5 className={styles.etiqueta}>Companies</h5>
-                    }
-                    if(selectedCompany){
-                        return(
-                            <div className={styles.close}>
-                                <hr/>
-                            </div>
-                        )
-                    }
-                })()}
-            <div>
-                {
-                    (companies.map(x =>{
-                        return(
-                            
-                                <div id={x.id == hovered? styles.hovered :
-                                    x.id == selectedCompany? styles.containerSelect : "none"} 
-                                className={selectedCompany? styles.nameContainer : styles.containerLine}
-                                onClick={() => selectCompany(x.id)} 
-                                onMouseEnter={()=> setHovered(x.id)}
-                                onMouseLeave={()=> setHovered(null)}
-                                >
-                                    
-                                <p className={ selectedCompany? styles.nombres : styles.nombresLine}>{x.name}</p>
-                                </div>
-                            
-                        )
-                    }))
+export function Selector({ selectCompany, companies, selectedCompany }) {
+    const [hovered, setHovered] = useState(null);
+
+    return (
+        <div className={selectedCompany ? styles.container : styles.containerLine}>
+            {(() => {
+                if (!selectedCompany) {
+                    return <h5 className={styles.etiqueta}>Companies</h5>;
                 }
-                {(()=>{
-                    if(selectedCompany){
-                        return(
+                if (selectedCompany) {
+                    return (
+                        <div className={styles.close}>
+                            <hr />
+                        </div>
+                    );
+                }
+            })()}
+            <div>
+                {companies.map((x) => {
+                    const rowClass = [
+                        selectedCompany ? styles.nameContainer : styles.containerLine,
+                        x.id === hovered ? styles.hovered : null,
+                        x.id === selectedCompany ? styles.containerSelect : null,
+                    ]
+                        .filter(Boolean)
+                        .join(' ');
+                    return (
+                        <div
+                            key={x.id}
+                            className={rowClass}
+                            onClick={() => selectCompany(x.id)}
+                            onMouseEnter={() => setHovered(x.id)}
+                            onMouseLeave={() => setHovered(null)}
+                        >
+                            <p className={selectedCompany ? styles.nombres : styles.nombresLine}>{x.name}</p>
+                        </div>
+                    );
+                })}
+                {(() => {
+                    if (selectedCompany) {
+                        return (
                             <div className={styles.close}>
-                                <hr/>
-                                <img className={styles.img} onClick={()=>selectCompany(null)} src={flecha} alt=""/>
+                                <hr />
+                                <img
+                                    className={styles.img}
+                                    style={{ transform: 'rotate(180deg)' }}
+                                    onClick={() => selectCompany(null)}
+                                    src={publicUrl('/Imagenes/espalda.svg')}
+                                    alt=""
+                                />
                             </div>
-                        )
+                        );
                     }
                 })()}
             </div>
         </div>
-    )
+    );
 }
-export default Selector
+export default Selector;

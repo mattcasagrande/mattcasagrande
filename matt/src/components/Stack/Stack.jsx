@@ -1,13 +1,12 @@
-import React from 'react'
-import styles from './Stack.module.css'
-import flecha from '../../Imagenes/espalda.svg'
-import flechader from '../../Imagenes/espalda-der.svg'
-import { useState } from 'react'
-import stacks from './stacks.js'
-import { Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+'use client';
 
-export function Stack(){
+import React, { useState } from 'react';
+import styles from './Stack.module.css';
+import stacks from './stacks.js';
+import { Row, Col } from 'react-bootstrap';
+import { publicUrl } from '@/lib/basePath';
+
+export function Stack() {
 const[open , setOpen] = useState(false)
 const [selectedStack , setSelectedStack] = useState(null)
 const handleClick = () => {
@@ -30,7 +29,7 @@ const handleClick = () => {
             </div>
             <div className={open? styles.tiraOpen : styles.tira}>
                    <img className={styles.flecha}
-                   src={open? flechader : flecha} alt=""
+                   src={open ? publicUrl('/Imagenes/espalda-der.svg') : publicUrl('/Imagenes/espalda.svg')} alt=""
                    onClick={()=>{handleClick()}}
                    />
             </div>
@@ -40,10 +39,12 @@ const handleClick = () => {
                     return(
                         stacks.map(x => {
                             return(
-                                <Col className={styles.iconos}
-                                onClick={()=>setSelectedStack(x.name)}
-                                >    
-                                    <img className={styles.icono} src={x.logo} alt="alternativa"/>
+                                <Col
+                                  key={x.name}
+                                  className={styles.iconos}
+                                  onClick={() => setSelectedStack(x.name)}
+                                >
+                                    <img className={styles.icono} src={x.logo} alt="" />
                                 </Col>
                             )
                         })

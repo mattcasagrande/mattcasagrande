@@ -1,7 +1,9 @@
-import React from 'react'
-import styles from './NO.module.css'
-import { Button } from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { Button } from 'react-bootstrap';
+import styles from './NO.module.css';
 export function NO() {
     return(
         <div>
@@ -11,9 +13,11 @@ export function NO() {
             <div className={styles.why}>
                 <h1>Why?</h1>
             </div>
-            <Link to='/' className={styles.why}>
-                <Button variant= "secondary">Go Back</Button>
-            </Link>
+            <div className={styles.why}>
+                <Button as={Link} href="/" variant="secondary">
+                    Go Back
+                </Button>
+            </div>
         </div>    
     )
 }

@@ -1,9 +1,11 @@
-import React ,{useState , useEffect} from 'react';
-import { Row , Col , Container , Dropdown, Button} from 'react-bootstrap'
-import Logo from '../../Logo.jsx'
-import styles from './Home.module.css'
-import AboutMe from '../Experiencia/AboutMe'
-import {Link} from 'react-router-dom'
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { Row, Col, Container, Button } from 'react-bootstrap';
+import Logo from '../../Logo.jsx';
+import styles from './Home.module.css';
+import AboutMe from '../Experiencia/AboutMe';
 import WorkExperience from '../WorkExperience/WorkExperience.jsx';
 import Stack from '../Stack/Stack.jsx';
 import Design from '../Design/Design.jsx';
@@ -20,13 +22,13 @@ var moveIt = () => {
 }
 const [active, setActive] = useState(styles.btn1)
 const [hideLogo, setHideLogo] = useState(false)
-const [showExperience, setShowExperience] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => {
+        const t = setTimeout(() => {
             setHideLogo(true)
         }, 2000);
-        });
+        return () => clearTimeout(t);
+    }, []);
     return(
         <Container>
             <Row className={styles.row}>
@@ -39,13 +41,18 @@ const [showExperience, setShowExperience] = useState(false)
                     <hr/>
                 </Col>
                 <Col className={hideLogo? active : styles.noDisplay} >
-                    <Link to='/NO'>
-                    <Button variant= "danger" onMouseEnter={()=> moveIt()}  >DONT TOUCH</Button>
-                    </Link>
+                    <Button
+                        as={Link}
+                        href="/NO/"
+                        variant="danger"
+                        onMouseEnter={() => moveIt()}
+                    >
+                        DONT TOUCH
+                    </Button>
                 </Col>
             </Row>
             <div className={styles.container}>
-               <AboutMe hideLogo={hideLogo} />
+               <AboutMe />
             </div>
             <div>
                 <WorkExperience/>

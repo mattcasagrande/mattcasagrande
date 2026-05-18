@@ -1,12 +1,11 @@
-import React ,{useState , useEffect} from 'react';
-import { Button , Collapse , Row , Col } from 'react-bootstrap';
-import styles from './AboutMe.module.css'
+'use client';
 
-export function AboutMe(hideLogo){
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+import styles from './AboutMe.module.css';
 
-const [showAbout , setShowAbout] = useState(false)
-
-    return(
+export function AboutMe() {
+    return (
         <div className={styles.container}>
             
                 <div id="About-me">
@@ -15,7 +14,7 @@ const [showAbout , setShowAbout] = useState(false)
                     <img className={styles.img} src="https://avatars2.githubusercontent.com/u/61607638?s=460&u=e08ab7c82de3b1b6bf70f03c75dea1b494b33161&v=4" alt=""/>
                 </Col>
                 <Col>
-                <h4>About Me</h4>
+                <h4>Me</h4>
                     <p>
                     Since my start in 2010, I always had a creative profile, I went through two careers: Industrial Design & Graphic Design and many courses where I perfected my skills with Adobe programs (Illustrator , InDesign, Photoshop, AfterEffects, Dreamweaver) which allowed me to successfully work in any design environment and project.
                     <br/>

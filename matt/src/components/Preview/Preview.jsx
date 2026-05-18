@@ -1,12 +1,10 @@
-import React from 'react'
-import { Row, Col, NavLink } from 'react-bootstrap'
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 import styles from './Preview.module.css'
 
 
 export function Preview({companies , selectedCompany}){
     const company = companies.find(x => x.id == selectedCompany)
-    console.log(companies)
-    console.log(company)
     if(!company){
         return(
             <h2>Select Company</h2>
@@ -45,7 +43,9 @@ export function Preview({companies , selectedCompany}){
             </Row>
             <Row>
                 <Col>
-                    <NavLink href={company.url}>{company.url}</NavLink>
+                    <a href={company.url} rel="noopener noreferrer">
+                        {company.url}
+                    </a>
                 </Col>
             </Row>
            
